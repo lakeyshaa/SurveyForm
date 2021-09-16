@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" {IF CLASSES}class="classes" {/IF}>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Intake Form</title>
+</head>
+
+<body>
+  <div class='form'>
+    <h1 class="title" id="title"><u>Client Intake Form</u></h1>
+    <form id="survey-form">
+      <p id="description">Tell us more about you and what brings you here today:</p>
+
+      <p>
+        <label for "name" id="name-label">Name</label>
+      </p>
+      <input class="formbox" type="text" id="name" name="user-name" placeholder="Enter your name" required>
+      </p>
+      <p>
+        <label for "email" id="email-label">E-mail</label>
+      </p>
+      <input class="formbox" type="email" id="email" name="user-email" placeholder="Enter your E-mail" required>
+      </p>
+      <p>
+        <label for "name" id="number-label">Age (optional)</label>
+      </p>
+      <p>
+        <input class="formbox" type="number" id="number" min="0" max="99" name="user-age" placeholder="Age">
+      </p>
+      <p>
+        <label for "dropdown">Which option describes your current level of experience?</label>
+      </p>
+      <select class="formbox" id="dropdown" name="experience">
+        <option value="Expert">Expert</option>
+        <option value="Advanced">Advanced</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Beginner">Beginner</option>
+      </select>
+      </p>
+      <p>
+        Describe your feelings about our first meeting?
+      </p>
+      <input class="radio" type="radio" id="confident" name="feelings" value="confident">
+      <label for="confident">Confident</label>
+      <input class="radio" type="radio" id="uneasy" name="feelings" value="uneasy">
+      <label for="uneasy">Uneasy</label>
+      <input class="radio" type="radio" id="both" name="feelings" value="both">
+      <label for="both">A little of both</label>
+      </p>
+      <p>
+        What would you like to accomplish with our meeting?
+      <p>
+        <input class="checkbox" id="clarity" name="goal" type="checkbox" value="clarity" </p>
+        <label for="clarity">Gain Clarity</label>
+
+      <p>
+        <input class="checkbox" id="goals" name="goal" type="checkbox" value="goals" </p>
+        <label for="">Set goals</label>
+
+      </p>
+      <p>
+        <input class="checkbox" id="action" name="goal" type="checkbox" value="action" </p>
+        <label for="action">Create a comprehensive action plan</label>
+
+      </p>
+      <p>
+        <input class="checkbox" id="unsure" name="goal" type="checkbox" value="unsure" </p>
+        <label for="unsure">I'm unsure at the moment</label>
+      </p>
+      <p>
+      <p>
+        <label for="comment">What else would you like for us to know?</label>
+      </p>
+      <p>
+        <textarea class="comment" id="comment" name="comment" rows="10" cols="50" placeholder="Enter your comment here..."></textarea>
+      </p>
+      <p>
+        <input class="submit" type="submit" id="submit" value="Submit">
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>
